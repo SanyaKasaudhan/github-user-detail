@@ -27,10 +27,10 @@ const GithubUser = () => {
   return (
     <div>
 
-        <CardGroup style={{width:"15em", height:"25em" , marginTop:"1em"}}>
-        <Card style={{ width: '8rem' }}>
         {items.map(item => (  
           <>
+          <CardGroup style={{width:"15em", height:"25em" , marginTop:"1em"}}>
+          <Card style={{ width: '8rem' }}>
             <Card.Img variant="top" src={item.avatar_url} style={{width:"15em", height:"15em"}}/>
             <Card.Body>
             <Card.Title>{item.login}</Card.Title>
@@ -41,13 +41,10 @@ const GithubUser = () => {
           <Card.Footer>
             {item.type}
           </Card.Footer>
+          </Card>   
+          </CardGroup>
           </>
         ))}
-    
-  </Card>
-  
-   
-</CardGroup>
 
     </div>
   )
