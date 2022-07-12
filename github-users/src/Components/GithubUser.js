@@ -26,6 +26,10 @@ const GithubUser = () => {
   } else {
   return (
     <div>
+        <div className="container">
+      <div className="row">
+        <div className="col">
+        <div className="col-md-4">
 
         {items.map(item => (  
           <>
@@ -45,7 +49,10 @@ const GithubUser = () => {
           </CardGroup>
           </>
         ))}
-
+    </div>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }

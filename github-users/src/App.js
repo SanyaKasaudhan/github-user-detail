@@ -4,13 +4,9 @@ function App() {
   return (
     <>
     <h1 className="head">Github Users</h1>
-    <div className="container">
-      <div className="row">
+    
         <GithubUser />
-
-      </div>
-      asd
-    </div>
+        
     </>
   );
 }
